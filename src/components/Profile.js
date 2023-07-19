@@ -9,21 +9,46 @@ const Profile = ({ username, tag, location, avatar, stats }) => (
         alt="User avatar"
         className="avatar"
       />
-      <p className="name">{username}</p>
-      <p className="tag">{tag}</p>
-      <p className="location">{location}</p>
+      <h2 className="name" style={{
+        display: "flex",
+        justifyContent:"center",
+      }}
+      >{username}</h2>
+      <p className="tag" style={{
+        display: "flex",
+        justifyContent:"center",
+      }}>{tag}</p>
+      <p className="location" style={{
+        display: "flex",
+        justifyContent:"center",
+      }}>{location}</p>
     </div>
 
-    <ul className="stats">
-      <li>
+    <ul className="stats" style={{
+        display: "flex",
+        justifyContent:"center",
+        }}>
+      <li style={{
+        display: "flex",
+        flexDirection: "column",
+        marginRight: "20px",
+        border: "2px black",
+        }}>
         <span className="label">Followers</span>
         <span className="quantity">{stats.followers}</span>
       </li>
-      <li>
+      <li style={{
+        display: "flex",
+        flexDirection: "column",
+        marginRight: "20px",
+        }}>
         <span className="label">Views</span>
         <span className="quantity">{stats.views}</span>
       </li>
-      <li>
+      <li style={{
+        display: "flex",
+        flexDirection: "column",
+        }}>
         <span className="label">Likes</span>
         <span className="quantity">{stats.likes}</span>
       </li>
