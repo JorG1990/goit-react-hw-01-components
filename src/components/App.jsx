@@ -14,31 +14,11 @@ import FriendList from './FriendList';
 
 
 
-function App({ username, tag, location, avatar, stats }) {
+function App() {
   return (
-    <div style={{
-      width: "1200px",
-      display: "flex",
-      justifyContent: "center",
-      flexDirection: "column",
-    }}>
-      <div style={{
-        display: "flex",
-        justifyContent: "center",
-        width: "470px",
-        height: "720px",
-	      background:"#1ca78c",
-	      boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2)",
-        borderRadius: "0px 0px 4px 4px",
-        marginTop: "30px",
-        marginBottom: "30px",
-        // marginLeft: "400px",
-      }}>
-      <Profile style={{
-        display: "flex",
-        justifyContent: "center",
-        with: "470px",
-      }}
+    <div>
+      <div>
+      <Profile
             username={user.username}
             tag={user.tag}
             location={user.location}

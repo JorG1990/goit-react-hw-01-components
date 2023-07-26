@@ -1,12 +1,14 @@
+
 import PropTypes from "prop-types";
+import { LiFriendItem, StatusSpan} from "./FriendList.styled"
 
 export const FriendListItem = ({ id, avatar, name, isOnline }) => {
     return (
-      <li FriendItem key={id}>
-        <span status={isOnline}></span>
+      <LiFriendItem key={id}>
+        <StatusSpan status={isOnline}></StatusSpan>
         <img src={avatar} alt={name} width="48" />
         <p>{name}</p>
-      </li>
+      </LiFriendItem>
     );
   };
 FriendListItem.propTypes = {
